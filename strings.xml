@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Measurement Converter</string>
+    <string name="miles">Miles</string>
+    <string name="kilometers">Kilometers</string>
+    <string name="inches">Inches</string>
+    <string name="centimeters">Centimeters</string>
+    <string-array name="measurements">
+        <item>Miles to Kilometers</item>
+        <item>Kilometers to Miles</item>
+        <item>Inches to Centimeters</item>
+        <item>Centimeters to Inches</item>
+    </string-array> >
+</resources>

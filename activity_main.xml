@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.tinbuzancic.measurementconverter.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Conversion"
+        android:id="@+id/conversionView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="31dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/pre"
+        android:layout_marginTop="26dp"
+        android:layout_below="@+id/conversionView"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/post"
+        android:layout_marginTop="28dp"
+        android:layout_below="@+id/pre"
+        android:layout_alignParentStart="true" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/conversionSpinner"
+        android:layout_toEndOf="@+id/conversionView"
+        android:layout_marginStart="59dp"
+        android:layout_alignBottom="@+id/conversionView" />
+
+    <EditText
+        android:id="@+id/measurementEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:ems="8"
+        android:inputType="numberDecimal"
+        android:text=""
+        android:textSize="20sp"
+        android:layout_below="@+id/conversionSpinner"
+        android:layout_alignStart="@+id/conversionSpinner"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Result"
+        android:id="@+id/result"
+        android:layout_alignTop="@+id/post"
+        android:layout_alignStart="@+id/measurementEditText" />
+
+</RelativeLayout>
